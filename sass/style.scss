@@ -5,6 +5,7 @@ body {
 	margin: 0;
 }
 #carousel {
+	position: relative;
 	margin: 30vh auto;
 	height: 400px;
 	width: 600px;
@@ -22,7 +23,15 @@ ul {
 		float: left;
 	}
 }
-#right {
+#right, #left {
 	color: #fff;
 	position: absolute;
+	cursor: pointer;
+	top: 50%;
+}
+#right {
+	padding-left: 550px;
+}
+#left {
+	padding-left: 30px;
 }

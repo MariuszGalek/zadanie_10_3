@@ -2,9 +2,12 @@ $(function(){
 });
 
 var carouselList = $("#carousel ul");
-setInterval(moveSlide, 3000)
+function defaultInterval() {
+	startInterval = setInterval(nextSlide, 3000);
+}
+defaultInterval();
 
-function moveSlide() {
+function nextSlide() {
 	carouselList.animate({'marginLeft':-600}, 500, moveFirstSlide);
 	}
 
@@ -16,3 +19,23 @@ function moveFirstSlide() {
 		marginLeft: 0
 	});
 }
+$("#right").click(function() {	
+	clearInterval(startInterval);
+	nextSlide();
+	defaultInterval();
+});
+$("#left").click(previousSlide);
+	function previousSlide() {
+		clearInterval(startInterval);
+		moveFirstSlideBack();
+		carouselList.animate({'marginLeft': 0}, 500, defaultInterval);
+	};
+
+function moveFirstSlideBack() {
+	var firstItem = carouselList.find("li:first");
+	var lastItem = carouselList.find("li:last");
+	firstItem.before(lastItem);
+	carouselList.css({
+			marginLeft: -600
+		});
+	};
