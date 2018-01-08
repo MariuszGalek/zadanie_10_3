@@ -8,22 +8,22 @@ body {
 
 #carousel {
   margin: 30vh auto;
-  height: 300px;
-  width: 400px;
-  border: 2px solid black;
+  height: 400px;
+  width: 600px;
+  border: 15px ridge #e3e3e3;
   overflow: hidden;
 }
 
 ul {
   list-style-type: none;
   margin: 0 auto;
-  height: 300px;
-  width: 2000px;
+  height: 400px;
+  width: 3000px;
 }
 
 ul li {
-  height: 300px;
-  width: 400px;
+  height: 400px;
+  width: 600px;
   float: left;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
