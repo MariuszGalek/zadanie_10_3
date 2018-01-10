@@ -43,4 +43,21 @@ ul li {
   padding-left: 30px;
 }
 
+.pagination {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+}
+
+.fa-circle {
+  padding-right: 5px;
+  display: inline;
+}
+
+#img1, #img2, #img3, #img4, #img5 {
+  color: #fff;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
